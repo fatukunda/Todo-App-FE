@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="card-body w-75 mx-auto mt-5 mb-5 p-5"
+        style="background-color: white;"
+      >
+        <div class="card bg-light mb-3">
+          <h3 class="card-title pt-3 pl-3">To Do:</h3>
+
+          <div class="mb-5 col-12" id="listBox">
+            <ul class="list-group" id="list"></ul>
+          </div>
+          <form>
+            <div class="form-row">
+              <div class="col-md-2">
+                <p class="text-center font-weight-bold">Task</p>
+              </div>
+              <div class="col-md-10 pr-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="What do you need to do?"
+                  id="inputText"
+                />
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm m-3 float-right" id="saveBtn">
+              Save Item
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./todo.js"></script>
+  </body>
+</html>
